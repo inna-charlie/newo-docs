@@ -1,0 +1,278 @@
+[
+ {
+  "page": "index.html",
+  "chapter": "Overview",
+  "section": "What's in this guide",
+  "anchor": "index.html#what-s-in-this-guide"
+ },
+ {
+  "page": "getting-started.html",
+  "chapter": "Getting started",
+  "section": "Step by step",
+  "anchor": "getting-started.html#step-by-step"
+ },
+ {
+  "page": "getting-started.html",
+  "chapter": "Getting started",
+  "section": "Before you go live",
+  "anchor": "getting-started.html#before-you-go-live"
+ },
+ {
+  "page": "getting-started.html",
+  "chapter": "Getting started",
+  "section": "Your first week",
+  "anchor": "getting-started.html#your-first-week"
+ },
+ {
+  "page": "voice.html",
+  "chapter": "Voice and telephony",
+  "section": "How a call is handled",
+  "anchor": "voice.html#how-a-call-is-handled"
+ },
+ {
+  "page": "voice.html",
+  "chapter": "Voice and telephony",
+  "section": "Ways callers connect",
+  "anchor": "voice.html#ways-callers-connect"
+ },
+ {
+  "page": "voice.html",
+  "chapter": "Voice and telephony",
+  "section": "Call features",
+  "anchor": "voice.html#call-features"
+ },
+ {
+  "page": "voice.html",
+  "chapter": "Voice and telephony",
+  "section": "Phone numbers by country",
+  "anchor": "voice.html#phone-numbers-by-country"
+ },
+ {
+  "page": "voice.html",
+  "chapter": "Voice and telephony",
+  "section": "Data privacy for calls",
+  "anchor": "voice.html#data-privacy-for-calls"
+ },
+ {
+  "page": "voice.html",
+  "chapter": "Voice and telephony",
+  "section": "Two ways the agent can speak",
+  "anchor": "voice.html#two-ways-the-agent-can-speak"
+ },
+ {
+  "page": "voice.html",
+  "chapter": "Voice and telephony",
+  "section": "Languages",
+  "anchor": "voice.html#languages"
+ },
+ {
+  "page": "voice.html",
+  "chapter": "Voice and telephony",
+  "section": "Outbound calls",
+  "anchor": "voice.html#outbound-calls"
+ },
+ {
+  "page": "voice.html",
+  "chapter": "Voice and telephony",
+  "section": "Transferring callers",
+  "anchor": "voice.html#transferring-callers"
+ },
+ {
+  "page": "voice.html",
+  "chapter": "Voice and telephony",
+  "section": "Bring your own SIP",
+  "anchor": "voice.html#bring-your-own-sip"
+ },
+ {
+  "page": "voice.html",
+  "chapter": "Voice and telephony",
+  "section": "Getting the best call quality",
+  "anchor": "voice.html#getting-the-best-call-quality"
+ },
+ {
+  "page": "billing.html",
+  "chapter": "Billing",
+  "section": "Plans",
+  "anchor": "billing.html#plans"
+ },
+ {
+  "page": "billing.html",
+  "chapter": "Billing",
+  "section": "Free units",
+  "anchor": "billing.html#free-units"
+ },
+ {
+  "page": "billing.html",
+  "chapter": "Billing",
+  "section": "Invoices and renewals",
+  "anchor": "billing.html#invoices-and-renewals"
+ },
+ {
+  "page": "billing.html",
+  "chapter": "Billing",
+  "section": "If a payment fails",
+  "anchor": "billing.html#if-a-payment-fails"
+ },
+ {
+  "page": "billing.html",
+  "chapter": "Billing",
+  "section": "Managing billing",
+  "anchor": "billing.html#managing-billing"
+ },
+ {
+  "page": "billing.html",
+  "chapter": "Billing",
+  "section": "Billing for partners",
+  "anchor": "billing.html#billing-for-partners"
+ },
+ {
+  "page": "billing.html",
+  "chapter": "Billing",
+  "section": "Choosing a plan",
+  "anchor": "billing.html#choosing-a-plan"
+ },
+ {
+  "page": "billing.html",
+  "chapter": "Billing",
+  "section": "Agent status and billing",
+  "anchor": "billing.html#agent-status-and-billing"
+ },
+ {
+  "page": "billing.html",
+  "chapter": "Billing",
+  "section": "Avoiding billing interruptions",
+  "anchor": "billing.html#avoiding-billing-interruptions"
+ },
+ {
+  "page": "security.html",
+  "chapter": "Reliability, support and security",
+  "section": "Getting help with an agent",
+  "anchor": "security.html#getting-help-with-an-agent"
+ },
+ {
+  "page": "security.html",
+  "chapter": "Reliability, support and security",
+  "section": "Common problems and what to check",
+  "anchor": "security.html#common-problems-and-what-to-check"
+ },
+ {
+  "page": "security.html",
+  "chapter": "Reliability, support and security",
+  "section": "Incident response",
+  "anchor": "security.html#incident-response"
+ },
+ {
+  "page": "security.html",
+  "chapter": "Reliability, support and security",
+  "section": "Infrastructure",
+  "anchor": "security.html#infrastructure"
+ },
+ {
+  "page": "security.html",
+  "chapter": "Reliability, support and security",
+  "section": "Security and compliance",
+  "anchor": "security.html#security-and-compliance"
+ },
+ {
+  "page": "security.html",
+  "chapter": "Reliability, support and security",
+  "section": "How your data is protected",
+  "anchor": "security.html#how-your-data-is-protected"
+ },
+ {
+  "page": "security.html",
+  "chapter": "Reliability, support and security",
+  "section": "Your part in keeping agents safe",
+  "anchor": "security.html#your-part-in-keeping-agents-safe"
+ },
+ {
+  "page": "security.html",
+  "chapter": "Reliability, support and security",
+  "section": "Writing a good problem report",
+  "anchor": "security.html#writing-a-good-problem-report"
+ },
+ {
+  "page": "agents.html",
+  "chapter": "Agents, integrations and partners",
+  "section": "How agents are built",
+  "anchor": "agents.html#how-agents-are-built"
+ },
+ {
+  "page": "agents.html",
+  "chapter": "Agents, integrations and partners",
+  "section": "Building blocks",
+  "anchor": "agents.html#building-blocks"
+ },
+ {
+  "page": "agents.html",
+  "chapter": "Agents, integrations and partners",
+  "section": "Changing your agent with Vibe Mode",
+  "anchor": "agents.html#changing-your-agent-with-vibe-mode"
+ },
+ {
+  "page": "agents.html",
+  "chapter": "Agents, integrations and partners",
+  "section": "Testing and activation",
+  "anchor": "agents.html#testing-and-activation"
+ },
+ {
+  "page": "agents.html",
+  "chapter": "Agents, integrations and partners",
+  "section": "Call history, reports and analysis",
+  "anchor": "agents.html#call-history-reports-and-analysis"
+ },
+ {
+  "page": "agents.html",
+  "chapter": "Agents, integrations and partners",
+  "section": "Integrations",
+  "anchor": "agents.html#integrations"
+ },
+ {
+  "page": "agents.html",
+  "chapter": "Agents, integrations and partners",
+  "section": "What each integration does",
+  "anchor": "agents.html#what-each-integration-does"
+ },
+ {
+  "page": "agents.html",
+  "chapter": "Agents, integrations and partners",
+  "section": "Setting up an integration",
+  "anchor": "agents.html#setting-up-an-integration"
+ },
+ {
+  "page": "agents.html",
+  "chapter": "Agents, integrations and partners",
+  "section": "White-label partner program",
+  "anchor": "agents.html#white-label-partner-program"
+ },
+ {
+  "page": "agents.html",
+  "chapter": "Agents, integrations and partners",
+  "section": "What partners control",
+  "anchor": "agents.html#what-partners-control"
+ },
+ {
+  "page": "faq.html",
+  "chapter": "Frequently asked questions",
+  "section": "Getting started",
+  "anchor": "faq.html#getting-started"
+ },
+ {
+  "page": "faq.html",
+  "chapter": "Frequently asked questions",
+  "section": "Calls",
+  "anchor": "faq.html#calls"
+ },
+ {
+  "page": "faq.html",
+  "chapter": "Frequently asked questions",
+  "section": "Billing",
+  "anchor": "faq.html#billing"
+ },
+ {
+  "page": "faq.html",
+  "chapter": "Frequently asked questions",
+  "section": "Data and security",
+  "anchor": "faq.html#data-and-security"
+ }
+]

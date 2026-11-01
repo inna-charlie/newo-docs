@@ -1,0 +1,322 @@
+/* ============================================================
+   Newo Branding & Design System - Design Tokens
+   The single source of truth for color, type, spacing, radii,
+   motion, and component primitives across every Newo surface:
+   marketing site, product UI, decks, docs, email, ads, events.
+   Single source of truth. Change values here; let consumers inherit.
+   ============================================================ */
+
+/* ---------- Manrope (variable) - DISPLAY, 28px and up ----------
+   One file, weight axis 200-800. Manrope ships no italic; italic
+   display text falls through to General Sans Italic via the stack. */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('fonts/Manrope-Variable.woff2') format('woff2-variations'),
+       url('fonts/Manrope-Variable.woff2') format('woff2');
+}
+
+/* ---------- General Sans (variable) - BODY, UI, headings to 24px ----------
+   Weight axis 200-700, with a true italic companion.
+   Files are the official Fontshare woff2 builds, shipped byte-identical:
+   the ITF Free Font License forbids format conversion or subsetting.
+   See fonts/LICENSE-GeneralSans-FFL.txt. */
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url('fonts/GeneralSans-Variable.woff2') format('woff2-variations'),
+       url('fonts/GeneralSans-Variable.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'General Sans';
+  font-style: italic;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url('fonts/GeneralSans-VariableItalic.woff2') format('woff2-variations'),
+       url('fonts/GeneralSans-VariableItalic.woff2') format('woff2');
+}
+
+:root {
+  /* ---------- Core neutrals ---------- */
+  --ink:        #00060C;   /* near-black, cool - buttons, primary surfaces */
+  --ink-soft:   #1C090A;   /* warm near-black - body text & headings */
+  --ink-mute:   #3D1518;   /* deep oxblood - secondary dark surface */
+  --paper:      #FFF9F3;   /* canvas cream - base surface */
+  --bone:       #F4E9DD;   /* warm sand - card / section fill */
+  --fog:        #E8D5C0;   /* warm tint - feature card translucent base */
+  --silver:     #DEC9AD;   /* deep sand - hairline border */
+  --pewter:     #C4BBB6;   /* warm grey - outline (derived, not in the brand pack) */
+  --slate:      #796B6A;   /* warm grey - tertiary text (derived, not in the brand pack) */
+  --graphite:   #655655;   /* warm grey - secondary text (derived, not in the brand pack) */
+
+  /* ---------- Brand accents ---------- */
+  --navy:       #55191C;   /* deep oxblood - feature blocks (name kept for compatibility) */
+  --signal:     #C65332;   /* terracotta - primary accent, links, highlights (name kept for compatibility) */
+  --signal-edge:#7A2528;   /* oxblood - stroke / hover variant */
+  --orange:     #E26832;   /* sunset mid - feature highlight ("+20% more sales") */
+  --amber:      #F39A45;   /* sunset amber - secondary stat color */
+  --green:      #00A63E;   /* success - the brand pack has no green; kept from the previous palette */
+  --green-text: #00C950;   /* small success text */
+  --purple:     #2A7A8C;   /* deep teal - industry tag, segmented pill (name kept for compatibility) */
+
+
+  /* ---------- Brand gradients (Newo Brand System) ---------- */
+  --gradient-canvas-warm:   linear-gradient(90deg,  #FFF9F3 0%, #F4E9DD 50%, #DEC9AD 100%);
+  --gradient-human-signal:  linear-gradient(135deg, #55191C 0%, #7A2528 50%, #C65332 100%);
+  --gradient-brand-fusion:  linear-gradient(180deg, #FFF9F3 0%, #E8D5C0 50%, #C65332 100%);
+  --gradient-sunset-glow:   linear-gradient(90deg,  #DB755C 0%, #E26832 50%, #F39A45 100%);
+  --gradient-dark-signal:   linear-gradient(135deg, #1A0608 0%, #3D1518 50%, #55191C 100%);
+  --gradient-warm-radiance: radial-gradient(circle at 50% 50%, #F39A45 0%, #E8D5C0 55%, #FFF9F3 100%);
+
+  /* ---------- Semantic ---------- */
+  --bg:         var(--paper);
+  --surface:    var(--bone);
+  --on-bg:      var(--ink-soft);
+  --on-bg-mute: var(--slate);
+  --border:     var(--silver);
+  --border-mute:var(--fog);
+  --focus-ring: 0 0 0 3px rgba(198, 83, 50, 0.32);
+
+  /* ---------- Type families (two faces, one threshold at 28px) ----------
+     Manrope carries display (28px+). General Sans carries body, UI and
+     headings up to 24px, and supplies the italics Manrope does not have. */
+  --font-display: 'Manrope', 'General Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body:    'General Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono:    'General Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* kept var for compat */
+
+  /* ---------- Display scale ----------
+     Sizes are unchanged from the Inter-era scale. Cap-height parity
+     between Inter Display (0.7275 em) and Manrope (0.7200 em) asks for
+     x1.0104, and x-height parity between Inter (0.5459) and General Sans
+     (0.5380) for x1.0147 - both absorbed by rounding, so 92 stays 92.
+
+     Tracking is where the swap actually lands. Manrope sets 4.0-5.6%
+     wider than Inter Display at the same size, so display tracking moves
+     from -0.040em to -0.055em to hold the same rendered headline width
+     (measured range -0.057..-0.066em; pulled to the looser end so tight
+     pairs do not collide at 92px). General Sans sets 4-7% narrower than
+     Inter, so the -0.020em on mid headings goes to 0. */
+  --t-d1: 92px;   --t-d1-ls: -0.055em;  /* hero h1   - Manrope Bold 700   */
+  --t-d2: 80px;   --t-d2-ls: -0.055em;  /* page hero - Manrope Medium 500 */
+  --t-h1: 64px;   --t-h1-ls: -0.055em;  /* section   - Manrope Medium 500 */
+  --t-h2: 48px;   --t-h2-ls: -0.055em;  /* sub-hero  - Manrope Medium 500 */
+  --t-h3: 32px;   --t-h3-ls: -0.055em;  /* card head - Manrope Medium 500 */
+  --t-h4: 24px;   --t-h4-ls: 0em;       /* big button / sub-section - General Sans */
+  --t-h5: 22px;   --t-h5-ls: -0.010em;  /* lead intro - General Sans */
+  --t-lead: 22px; --t-lead-ls: -0.010em;
+  --t-body: 18px;                     /* default body */
+  --t-sm: 16px;                       /* meta, caption, footer link */
+  --t-xs: 14px;                       /* micro, table cells, footer */
+  --t-eyebrow: 14px;                  /* eyebrow / nav link */
+  --t-tag: 12px;
+
+  /* Line heights recomputed for the new glyph extents (ascender-to-
+     descender, em): Inter Display 0.9316 -> Manrope 0.9750;
+     Inter 0.9355 -> General Sans 0.9110. Each value keeps the same
+     visual gap between baselines as the Inter-era scale had. */
+  --lh-tight:  1.09;  /* very large display (was 1.05 on Inter Display) */
+  --lh-snug:   1.14;  /* h1-h2            (was 1.10) */
+  --lh-card:   1.29;  /* card heads       (was 1.25) */
+  --lh-body:   1.50;  /* body - computed 1.475, rounded up; never tighten body */
+  --lh-meta:   1.38;  /* small ui         (was 1.40) */
+
+  /* ---------- Spacing (8-pt cadence) ---------- */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  20px;
+  --s-6:  24px;
+  --s-7:  32px;
+  --s-8:  40px;
+  --s-9:  48px;
+  --s-10: 64px;
+  --s-11: 80px;
+  --s-12: 112px;
+  --s-13: 160px;
+
+  /* ---------- Radii ---------- */
+  --r-sm:  8px;     /* small chip */
+  --r-md:  16px;    /* nav link cell, small panel */
+  --r-lg:  24px;    /* card, feature panel - the signature radius */
+  --r-xl:  32px;    /* large hero panel */
+  --r-pill: 9999px; /* full pill - buttons, tags, search field */
+  --r-full: 9999px;
+
+  /* ---------- Elevation ---------- */
+  --shadow-1: 0 1px 2px rgba(16,24,40,0.06), 0 1px 3px rgba(16,24,40,0.10);
+  --shadow-2: 0 4px 12px rgba(0,0,0,0.06);
+  --shadow-3: 0 16px 40px rgba(0,0,0,0.10);
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(.2, .7, .2, 1);
+  --t-fast: 150ms;
+  --t-norm: 300ms;
+
+  /* ---------- Layout ---------- */
+  --container:        1632px;  /* wide - full marketing sections */
+  --container-default: 1440px; /* default page width */
+  --container-narrow:  860px;  /* article / long-form reading.
+     Was 910px on Inter. General Sans is 5.4% narrower per character
+     (0.4983 vs 0.5269 em average), which pushed an 18px line from
+     96 to 101 characters. 910 x 0.4983/0.5269 = 861 -> 860px holds
+     the original measure. */
+  --gutter: 48px;
+}
+
+/* ============================================================
+   Base resets used across showcase pages
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--on-bg);
+  font-family: var(--font-body);
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* ============================================================
+   Type primitives (.t-*)
+   Display (.t-d1 .. .t-h3, 32px+): Manrope Medium 500, -0.055em.
+   Hero (.t-d1): Manrope Bold 700 at 92px.
+   Mid heads (.t-h4 / .t-h5) and everything below: General Sans.
+   ============================================================ */
+.t-d1, .t-d2, .t-h1, .t-h2, .t-h3 {
+  font-family: var(--font-display);
+  font-weight: 500;                 /* Medium for all heads */
+  line-height: var(--lh-snug);
+  margin: 0;
+  color: var(--ink-soft);           /* warm #1C090A, not pure black */
+  text-wrap: balance;
+}
+.t-h4, .t-h5 {
+  font-family: var(--font-body);     /* 24px and below sits under the display threshold */
+  font-weight: 500;
+  line-height: var(--lh-card);
+  margin: 0;
+  color: var(--ink-soft);
+}
+.t-d1 { font-size: var(--t-d1); letter-spacing: var(--t-d1-ls); line-height: var(--lh-tight); font-weight: 700; color: var(--ink); }
+.t-d2 { font-size: var(--t-d2); letter-spacing: var(--t-d2-ls); color: var(--ink); }
+.t-h1 { font-size: var(--t-h1); letter-spacing: var(--t-h1-ls); color: var(--ink); }
+.t-h2 { font-size: var(--t-h2); letter-spacing: var(--t-h2-ls); }
+.t-h3 { font-size: var(--t-h3); letter-spacing: var(--t-h3-ls); }
+.t-h4 { font-size: var(--t-h4); letter-spacing: var(--t-h4-ls); }
+.t-h5 { font-size: var(--t-h5); letter-spacing: var(--t-h5-ls); line-height: 1.50; }
+
+.t-lead   { font-size: var(--t-lead); letter-spacing: var(--t-lead-ls); line-height: var(--lh-body); margin: 0; color: var(--ink); }
+.t-body   { font-size: var(--t-body); line-height: var(--lh-body); margin: 0; color: var(--ink-soft); }
+.t-sm     { font-size: var(--t-sm);   line-height: var(--lh-meta); margin: 0; }
+.t-xs     { font-size: var(--t-xs);   line-height: 1.3; margin: 0; }
+
+.t-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--t-eyebrow);
+  font-weight: 400;
+  line-height: var(--lh-meta);
+  margin: 0;
+  color: var(--ink);
+}
+.t-tag {
+  font-family: var(--font-body);
+  font-size: var(--t-body);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.1;
+  padding: 16px;
+  border-radius: var(--r-pill);
+  background: var(--purple);
+  color: var(--paper);
+  display: inline-block;
+}
+
+/* ============================================================
+   Buttons (.btn) - pill buttons (size variants)
+   Three sizes: small (40h), normal (56h), header (81h)
+   ============================================================ */
+.btn {
+  font-family: var(--font-body);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 24px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0;                 /* General Sans needs no negative tracking at 24px */
+  font-weight: 500;
+  transition: opacity var(--t-fast) var(--ease-out), transform var(--t-fast) var(--ease-out);
+}
+.btn:hover { opacity: 0.92; transform: translateY(-1px); }
+.btn--filled { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.btn--white  { background: var(--paper); color: var(--ink); border-color: var(--silver); }
+.btn--white:hover { background: var(--bone); }
+.btn--ghost  { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn--ghost:hover { background: var(--ink); color: var(--paper); }
+.btn--sm { padding: 8px 16px; font-size: 18px; font-weight: 400; letter-spacing: 0; line-height: 1.5; }
+.btn--lg { padding: 32px 32px; font-size: 24px; }
+
+/* ============================================================
+   Inputs (.input)
+   ============================================================ */
+.input {
+  font-family: var(--font-body);
+  font-size: 17px;
+  height: 56px;
+  padding: 14px 24px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  outline: none;
+  width: 100%;
+  transition: box-shadow var(--t-fast) var(--ease-out);
+}
+.input:focus { box-shadow: var(--focus-ring); }
+.input--dark { background: var(--graphite); color: var(--paper); }
+.input--dark::placeholder { color: rgba(255,255,255,0.6); }
+
+/* ============================================================
+   Cards
+   ============================================================ */
+.card {
+  background: var(--bone);
+  border-radius: var(--r-lg);
+  padding: 24px;
+}
+.card--ink   { background: var(--ink); color: var(--paper); }
+.card--bordered {
+  background: transparent;
+  border: 1px solid var(--pewter);
+}
+
+/* ============================================================
+   Layout helpers
+   ============================================================ */
+.container { width: 100%; max-width: var(--container); padding: 0 var(--gutter); margin: 0 auto; }
+.container--narrow { max-width: var(--container-narrow); }
+
+.stack-1 > * + * { margin-top: var(--s-1); }
+.stack-2 > * + * { margin-top: var(--s-2); }
+.stack-3 > * + * { margin-top: var(--s-3); }
+.stack-4 > * + * { margin-top: var(--s-4); }
+.stack-5 > * + * { margin-top: var(--s-5); }
+.stack-6 > * + * { margin-top: var(--s-6); }
+.stack-7 > * + * { margin-top: var(--s-7); }
+.stack-8 > * + * { margin-top: var(--s-8); }

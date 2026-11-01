@@ -1,0 +1,19 @@
+# Newo Platform Documentation
+
+> Public guide to the Newo platform: voice, billing, security, agents and integrations.
+
+## Pages
+
+- [Overview](index.html): The Newo platform runs AI receptionists and customer-service agents that answer calls, texts and chats for appointment-driven businesses such as restaurant
+- [Getting started](getting-started.html): Most businesses go from a new account to a live agent in under an hour: create the agent, check its setup, test it, then point your calls at it.
+- [Voice and telephony](voice.html): Every voice call reaches a Newo agent through a carrier or web connection and is handled by Newo's Voice Service, which listens to the caller, runs the age
+- [Billing](billing.html): Newo bills by usage, measured in units. Every conversation your agent handles uses units, and your plan sets how many units are included and how extra usag
+- [Reliability, support and security](security.html): Newo watches agents in production around the clock, runs a 24/7 on-call rotation for incidents, and operates an ISO/IEC 27001 information security program.
+- [Agents, integrations and partners](agents.html): Agents on the Newo platform are built from flows and skills, set up through Newo's builder tools or by chatting with Vibe Mode, and connected to booking, o
+- [Frequently asked questions](faq.html): How long does it take to set up an agent? Most businesses create, test and launch an agent in under an hour using Agent Creator and the setup checklist.
+- [Glossary](glossary.html): 
+- [About this guide](about.html): This guide describes the Newo platform as of 1 November 2026. Plans, limits, supported countries and integrations change over time. Contact Newo or your pa
+
+## Full text
+
+- [Complete guide as Markdown](newo-platform-documentation.md)
